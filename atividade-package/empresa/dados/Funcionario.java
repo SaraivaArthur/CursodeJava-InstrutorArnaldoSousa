@@ -1,10 +1,9 @@
 package empresa.dados;
-
 public class Funcionario {
     private String nome;
     double salario;
 
-    public Funcionario(String nomeInit, double salarioInit) {
+    private Funcionario(String nomeInit, double salarioInit) {
         nome = nomeInit;
         salario = salarioInit;
         System.out.println("Nome: " + nome);
@@ -12,6 +11,6 @@ public class Funcionario {
     }
 
     public Funcionario() {
-        this("Mario", 4000);
+        Funcionario func = new Funcionario;  ("Mario", 4000);
     }
 }
