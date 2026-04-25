@@ -1,0 +1,11 @@
+public class TestePackage {
+    public static void main(String[] args) {
+        Funcionario funcionario = new Funcionario("Arthur", 3000.00);
+
+        System.out.println(funcionario.obterInfo());
+
+        funcionario.aumentarSalario(3000.00);
+
+        System.out.println(funcionario.obterInfo());
+    }
+}
