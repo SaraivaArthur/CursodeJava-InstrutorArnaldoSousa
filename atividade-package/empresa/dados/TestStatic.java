@@ -1,12 +1,8 @@
-public class TestStatic {
-
-    public static void exibirValor(int a) {
-        System.out.println("O valor do inteiro é: " + a);
-    }
-    public static void exibirValor(String str) {
-        System.out.println("A string é: " + str);
-    }
+class FolhaDePagamento {
     public static void main(String[] args) {
-        exibirValor("Oi");
+        Funcionario funcionario = new Funcionario("Arnaldo", 5000.00); // para determinar double sem usar "10.2" por exemplo, pode ser usado "10d"
+		funcionario.aumentarSalario(100);
+
+        System.out.println(funcionario.obterInfo());
     }
 }
