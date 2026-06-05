@@ -1,0 +1,26 @@
+.root { 
+	-fx-background-color: black;
+}
+
+.text-field { 
+	-fx-background-color: black;
+	-fx-text-fill: cyan;
+	-fx-prompt-text-fill: cyan;
+	-fx-border-radius: 10;
+	-fx-background-radius: 10;
+}
+
+.button { 
+	-fx-background-color: green;
+	-fx-text-fill: white;
+	-fx-background-radius: 10;
+	-fx-cursor: hand;
+}
+
+.button:hover { 
+	-fx-background-color: #00ff00;
+}
+
+.hbox {
+	-fx-padding: 50;
+}
