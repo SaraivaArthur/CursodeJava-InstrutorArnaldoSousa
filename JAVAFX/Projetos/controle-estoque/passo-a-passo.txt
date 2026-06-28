@@ -1,0 +1,12 @@
+== Projeto Gerenciamento de Estoque de Produtos ==
+
+== PASSO A PASSO PARA RODAR O PROJETO ==
+
+1. "javac *.java" - para compilar tudo;
+
+2. Depois compilar "Main" 1, 2, e 3 para rodar as funções de CRUD antes de visualizar a interface;
+
+3. Normalmente o caminho de compilação é esse:
+"javac --module-path %PATH_TO_FX% --add-modules javafx.controls ProdutoGUI.java";
+
+

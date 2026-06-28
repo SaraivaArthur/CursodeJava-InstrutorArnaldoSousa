@@ -1,90 +1,85 @@
-
-/* styles-produtos.css */
-
-/* Estilo para fundo */
+/* Fundo */ 
 .root {
-    -fx-background-color: #1E1E1E;
+	-fx-background-color: #2b2b2b;
 }
 
-/* Estilo para rótulos - texto cinza em negrito */
+/* Cor de texto das Labels */
 .label {
-    -fx-font-size: 14px; 
-    -fx-text-fill: #E0E0E0;
-    -fx-font-weight: bold; 
+	-fx-text-fill: #ffffff;
 }
 
-/* Estilo para campos de texto - fundo escuro com bordas arredondadas */
-.text-field {
-    -fx-background-color: #2D2D30;
-    -fx-text-fill: white; 
-
-    -fx-border-color: #3C3C3C;
-    -fx-border-radius: 6;
-    -fx-background-radius: 6;
-
-    -fx-padding: 6;
-}
-
-/* Campo selecionado - borda azul */
-.text-field:focused {
-    -fx-border-color: #007ACC;
-}
-
-/* Estilo para botões - cinza médio com texto branco */
+/* Configuração dos botões */
 .button {
-    -fx-background-color: #3C3C3C; 
-    -fx-text-fill: white; 
-    -fx-font-size: 14px;
-    -fx-font-weight: bold;
-    -fx-background-radius: 8;
-    -fx-cursor: hand; 
+	-fx-background-color: #4a4a4a;
+	-fx-text-fill: #ffffff;
+	-fx-background-radius: 4;
+	-fx-padding: 6 12 6 12;
 }
 
-/* Botão ao passar o mouse - cinza mais escuro */
+/* Hover nos botões */
 .button:hover {
-    -fx-background-color: #505050;
+	-fx-background-color: #1a1a1a;
+	-fx-cursor: hand; /* Transforma a seta do mouse na "mãozinha" */
 }
 
-/* Botão pressionado - cinza escuro */
-.button:pressed {
-    -fx-background-color: #252526;
-}
-
-/* Tabela - fundo escuro com borda */
+/* Cor da tabela */
 .table-view {
-    -fx-background-color: #252526; 
-    -fx-border-color: #3C3C3C;
+	-fx-background-color: #333333;
 }
 
-/* Cabeçalho da tabela - cinza escuro de destaque */
-.table-view .column-header {
-    -fx-background-color: #3C3C3C;
-}
-
-/* Texto dos cabeçalhos - branco de contraste */
+/* Cabeçalho da tabela */
 .table-view .column-header .label {
-    -fx-text-fill: white;
+	-fx-text-fill: #ffffff;
+}
+.table-view .column-header {
+	-fx-background-color: #3c3f41;
 }
 
-/* Linhas da tabela - fundo escuro sem bordas visíveis */
+/* Linhas da tabela */ 
 .table-row-cell {
-    -fx-background-color: #252526;
-    -fx-padding: 10px; 
-    -fx-border-color: transparent;
+	-fx-background-color: #2b2b2b;
+	-fx-text-background-color: #ffffff
 }
 
-/* Linha ao passar o mouse - destaque */
+/* Garante que as linhas verticais e horizontais da tabela apareçam */
+.table-view .table-cell {
+    -fx-border-color: #444444; /* Cor das linhas da tabela */
+    -fx-border-width: 0.5px;    /* Espessura das linhas de divisão */
+    -fx-padding: 8;            /* Espaçamento interno para o texto não colar na linha */
+}
+
+/* Corrige a borda das colunas no cabeçalho para alinhar com a tabela */
+.table-view .column-header {
+    -fx-border-color: #444444;
+    -fx-border-width: 0.5px;
+}
+
+/* Hover ao passar o mouse em cima do item da tabela */
 .table-row-cell:hover {
-    -fx-background-color: #323233;
+    -fx-background-color: #00FF7F; 
+    -fx-text-background-color: #ffffff; 
+    -fx-cursor: hand; /* Transforma a seta do mouse na "mãozinha" */
 }
 
-/* Linha selecionada - azul de destaque */
-.table-row-cell:selected {
-    -fx-background-color: #007ACC;
+/* Fundo branco, texto preto */
+.combo-box-popup .list-view {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cccccc;
 }
 
-/* Células da tabela - texto branco e sem divisórias */
-.table-cell {
-    -fx-padding: 10px; 
-    -fx-text-fill: white;
+.combo-box-popup .list-cell {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #000000; 
+}
+
+/* Hover do HBox */
+.combo-box-popup .list-cell:hover {
+    -fx-background-color: #00FF7F !important; 
+    -fx-text-fill: #000000 !important;        
+}
+
+/* Quando o item está apenas selecionado/clicado dentro da lista */
+.combo-box-popup .list-cell:filled:selected {
+    -fx-background-color: #e0e0e0 !important; 
+    -fx-text-fill: #000000 !important;        
 }
